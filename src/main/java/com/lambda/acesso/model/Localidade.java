@@ -2,6 +2,8 @@ package com.lambda.acesso.model;
 
 import lombok.*;
 
+import javax.persistence.OneToMany;
+
 @Getter
 @Setter
 @AllArgsConstructor
@@ -10,5 +12,7 @@ import lombok.*;
 @Builder
 public class Localidade {
     private Long id;
+    @OneToMany
+    private NivelAcesso nivelAcesso;
     private String descricao;
 }
