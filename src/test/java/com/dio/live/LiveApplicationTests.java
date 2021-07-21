@@ -1,13 +1,13 @@
-package com.lambda.acesso;
+package com.dio.live;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AcessoApplicationTests {
+class LiveApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }

@@ -2,8 +2,9 @@ package com.lambda.acesso.model;
 
 import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 
 @Getter
 @Setter
@@ -11,8 +12,10 @@ import javax.persistence.OneToMany;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+@Entity
 public class Localidade {
-    private Long id;
+    @Id
+    private  long id;
     @ManyToOne
     private NivelAcesso nivelAcesso;
     private String descricao;
